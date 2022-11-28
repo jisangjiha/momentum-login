@@ -1,3 +1,51 @@
 .hidden {
   display: none;
 }
+
+body {
+  display: flex grid;
+  flex-direction: column;
+  text-align: center;
+}
+
+#weather {
+  text-align: right;
+}
+
+#clock {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+#login {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+#todo {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+#todo-form input {
+  width: 200px;
+}
+
+#lyrics {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.8;
+}

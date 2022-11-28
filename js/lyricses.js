@@ -36,10 +36,10 @@ const lyricses = [
   { lyrics: "믿어 뒤 보지 말고 같이 뛰어", title: "Trigger The Fever" },
 ];
 
-const lyrics = document.querySelector("#lyrics span:first-child");
-const title = document.querySelector("#lyrics span:last-child");
+const lyrics = document.querySelector("#lyrics div:first-child");
+const title = document.querySelector("#lyrics div:last-child");
 
 const todaysLyrics = lyricses[Math.floor(Math.random() * lyricses.length)];
 
 lyrics.innerText = todaysLyrics.lyrics;
-title.innerText = todaysLyrics.title;
+title.innerText = `<${todaysLyrics.title}>`;
