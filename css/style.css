@@ -3,41 +3,71 @@
 }
 
 body {
-  display: flex grid;
+  display: flex;
   flex-direction: column;
   text-align: center;
+  text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);
+  margin: 0%;
 }
 
 #weather {
   text-align: right;
+  padding: 12px;
+  font-size: min(20px, 4vw);
+  font-family: monospace;
 }
 
 #clock {
+  font-size: min(150px, 15vw);
+  margin: 0px;
   position: absolute;
-  top: 30%;
   width: 100%;
+  top: 20%;
+}
+
+#login_todo {
+  position: absolute;
+  top: 40%;
+  align-items: center;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
 }
 
 #login {
-  position: absolute;
-  top: 40%;
-  width: 100%;
+  position: relative;
+  height: 40px;
+}
+
+#greeting {
+  position: relative;
+  height: 40px;
+  margin: 0px;
+  color: white;
 }
 
 #todo {
-  position: absolute;
-  top: 50%;
-  width: 100%;
+  position: relative;
 }
 
-#todo-form input {
+#todo input {
   width: 200px;
 }
 
+#todo-list {
+  background-color: white;
+  opacity: 70%;
+  border-radius: 4px;
+}
+
 #lyrics {
+  color: white;
   position: absolute;
   bottom: 0%;
   width: 100%;
+  font-size: min(20px, 4vw);
+  font-family: monospace;
+  font-style: italic;
 }
 
 img {
